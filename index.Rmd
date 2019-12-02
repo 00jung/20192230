@@ -68,6 +68,23 @@ ggplot(mpg, aes(x=displ, y=hwy)) +
  - ggplot2: map_data()를 이용하여 지도정보를 R로 불러오기
  - ggiraphExtra : 단계 구분도 표시
 
+
+
+```{r}
+economics
+```
+
+
+```{r}
+ggplot(economics, aes(x=date , y=pce)) + geom_line(color='red')
+```
+
+
+
+
+
+
+
 ```{r message=F}
 library(maps)
 library(mapproj)
